@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Init - B2B Data-Driven Marketing Agency</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-chart-line me-2"></i>Nexus Init
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2 px-3" href="#contact">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 fade-in">
+                        Transform Your B2B Growth with 
+                        <span class="text-primary">Data-Driven Marketing</span>
+                    </h1>
+                    <p class="lead mb-4 fade-in-delay">
+                        At Nexus Init, we leverage advanced analytics and data insights to accelerate your B2B marketing performance and drive measurable ROI.
+                    </p>
+                    <div class="fade-in-delay-2">
+                        <a href="#services" class="btn btn-primary btn-lg me-3">Our Services</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Free Consultation</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-chart-container">
+                        <canvas id="heroChart" width="500" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Data-Driven Marketing Services</h2>
+                    <p class="lead">We combine cutting-edge technology with strategic insights to deliver exceptional B2B marketing results.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-chart-bar fa-2x text-primary"></i>
+                        </div>
+                        <h4>Marketing Analytics</h4>
+                        <p>Comprehensive data analysis to understand customer behavior, campaign performance, and market trends.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Performance Tracking</li>
+                            <li><i class="fas fa-check text-success me-2"></i>ROI Analysis</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Conversion Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-bullseye fa-2x text-primary"></i>
+                        </div>
+                        <h4>Lead Generation</h4>
+                        <p>Strategic lead generation campaigns powered by data insights and targeted outreach.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Account-Based Marketing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Lead Scoring</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Nurture Campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-cogs fa-2x text-primary"></i>
+                        </div>
+                        <h4>Marketing Automation</h4>
+                        <p>Streamline your marketing processes with intelligent automation and personalization.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Email Marketing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Workflow Automation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>CRM Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-search fa-2x text-primary"></i>
+                        </div>
+                        <h4>SEO & Content Strategy</h4>
+                        <p>Data-driven content strategies that improve search rankings and engage your target audience.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Keyword Research</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Content Optimization</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Performance Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-ad fa-2x text-primary"></i>
+                        </div>
+                        <h4>Paid Advertising</h4>
+                        <p>Maximize your advertising ROI with data-driven campaign management and optimization.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Google Ads Management</li>
+                            <li><i class="fas fa-check text-success me-2"></i>LinkedIn Advertising</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Retargeting Campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100 p-4 bg-white rounded-3 shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-users fa-2x text-primary"></i>
+                        </div>
+                        <h4>Social Media Marketing</h4>
+                        <p>Build meaningful connections with your B2B audience through strategic social media campaigns.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Platform Strategy</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Content Creation</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Community Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Why Choose Nexus Init?</h2>
+                    <p class="lead mb-4">We're not just another marketing agency. We're your strategic partner in B2B growth, combining deep industry expertise with cutting-edge data analytics.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="stat-card text-center p-3">
+                                <h3 class="display-6 fw-bold text-primary mb-0" data-count="150">0</h3>
+                                <p class="mb-0">B2B Clients Served</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card text-center p-3">
+                                <h3 class="display-6 fw-bold text-primary mb-0" data-count="85">0</h3>
+                                <p class="mb-0">% Average ROI Increase</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card text-center p-3">
+                                <h3 class="display-6 fw-bold text-primary mb-0" data-count="5">0</h3>
+                                <p class="mb-0">Years of Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card text-center p-3">
+                                <h3 class="display-6 fw-bold text-primary mb-0" data-count="24">0</h3>
+                                <p class="mb-0">7 Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-features">
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-database fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Data-First Approach</h5>
+                                <p>Every decision we make is backed by comprehensive data analysis and proven methodologies.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-rocket fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Scalable Solutions</h5>
+                                <p>Our strategies grow with your business, ensuring long-term success and sustainable growth.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-handshake fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5>Strategic Partnership</h5>
+                                <p>We work as an extension of your team, aligning our goals with your business objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Meet Our Expert Team</h2>
+                    <p class="lead">Our diverse team of marketing professionals, data analysts, and strategists work together to drive your success.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center p-4 bg-white rounded-3 shadow-sm">
+                        <div class="team-avatar mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="John Smith" class="rounded-circle">
+                        </div>
+                        <h5>John Smith</h5>
+                        <p class="text-muted mb-3">CEO & Strategic Director</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center p-4 bg-white rounded-3 shadow-sm">
+                        <div class="team-avatar mb-3">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b108?w=150&h=150&fit=crop&crop=face" alt="Sarah Johnson" class="rounded-circle">
+                        </div>
+                        <h5>Sarah Johnson</h5>
+                        <p class="text-muted mb-3">Head of Data Analytics</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center p-4 bg-white rounded-3 shadow-sm">
+                        <div class="team-avatar mb-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Mike Davis" class="rounded-circle">
+                        </div>
+                        <h5>Mike Davis</h5>
+                        <p class="text-muted mb-3">Lead Marketing Strategist</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center p-4 bg-white rounded-3 shadow-sm">
+                        <div class="team-avatar mb-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Emily Chen" class="rounded-circle">
+                        </div>
+                        <h5>Emily Chen</h5>
+                        <p class="text-muted mb-3">Creative Director</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Transform Your B2B Marketing?</h2>
+                    <p class="lead">Let's discuss how Nexus Init can accelerate your business growth through data-driven marketing strategies.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control" id="company" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="service" class="form-label">Service Interest</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="analytics">Marketing Analytics</option>
+                                    <option value="lead-generation">Lead Generation</option>
+                                    <option value="automation">Marketing Automation</option>
+                                    <option value="seo">SEO & Content Strategy</option>
+                                    <option value="paid-ads">Paid Advertising</option>
+                                    <option value="social-media">Social Media Marketing</option>
+                                    <option value="consultation">Free Consultation</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your marketing challenges and goals..."></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                        <h5>Office Location</h5>
+                        <p class="text-muted">123 Business District<br>New York, NY 10001</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                        <h5>Phone</h5>
+                        <p class="text-muted">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                        <h5>Email</h5>
+                        <p class="text-muted">hello@nexusinit.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center">
+                        <h5 class="mb-0 me-4">
+                            <i class="fas fa-chart-line me-2"></i>Nexus Init
+                        </h5>
+                        <p class="mb-0 text-muted">© 2024 Nexus Init. All rights reserved. | Data-Driven B2B Marketing Excellence</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
